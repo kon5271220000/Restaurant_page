@@ -1,1 +1,3 @@
-console.log("hello asuka")
+import { loadHomePage } from "./js/home.js";
+
+loadHomePage()
