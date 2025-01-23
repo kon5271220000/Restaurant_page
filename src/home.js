@@ -1,9 +1,10 @@
 
-export const loadHomePage = function() {
+import homeImg from "./img/home.jpg"
+export const loadHomePage = () => {
     const container = document.getElementById("content")
 
     const backgroudnImage = document.createElement("img")
-    backgroudnImage.src = "./img/home.jpg"
+    backgroudnImage.src = homeImg
     backgroudnImage.alt = "background"
     container.appendChild(backgroudnImage)
 
