@@ -1,0 +1,10 @@
+header{
+    position: absolute;
+    width: 100vh;
+    background-color: gray;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
