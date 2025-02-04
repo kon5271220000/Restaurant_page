@@ -1,12 +1,17 @@
 
 export const loadAboutPage = () => {
-    const container = document.getElementById("content")
+    const content = document.getElementById("content")
+    const container = document.createElement("div")
+    container.className = "info_page"
+    
 
     addInfo("Address: ", "320, not real str", container)
     addInfo("Phone: ", "555-420-555", container)
     addInfo("Email: ", "notRealEmail@gmail.com", container)
     addInfo("Website: ", "www.notRealWebstite.com", container)
     addOpenInfo(container)
+
+    content.appendChild(container)
 }
 
 function addInfo(heading, content, holder){

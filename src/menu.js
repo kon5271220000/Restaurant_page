@@ -4,7 +4,11 @@ import banhmiImg from "./img/banhmi.jpg"
 import banhxeoImg from "./img/banhxeo.jpg"
  
 export const loadMenuPage = () => {
-    const container = document.getElementById("content")
+    const content = document.getElementById("content")
+
+    const container = document.createElement("div")
+    container.className = "menu_page"
+    
     
     const item1 = createItem("Pho", phoImg, "Vietnam’s iconic noodle soup, a harmonious blend of savory broth, tender beef or chicken, fresh herbs, and delicate rice noodles.")
     item1.addItem(container)
@@ -18,6 +22,8 @@ export const loadMenuPage = () => {
     const item4 = createItem("Banh Xeo", banhxeoImg, "A crispy Vietnamese savory pancake filled with shrimp, pork, bean sprouts, and herbs, served with fresh greens and a tangy dipping sauce.")
     item4.addItem(container)
 
+    content.appendChild(container)
+
 }
 
 function createItem(name, img, descrip){
@@ -28,14 +34,17 @@ function createItem(name, img, descrip){
         foodImg.src = img
         foodCard.appendChild(foodImg)
 
+        const foodContent = document.createElement("div")
+
         const foodName = document.createElement("h3")
         foodName.textContent = name
-        foodCard.appendChild(foodName)
+        foodContent.appendChild(foodName)
 
         const foodDes = document.createElement("p")
         foodDes.textContent = descrip
-        foodCard.appendChild(foodDes)
+        foodContent.appendChild(foodDes)
 
+        foodCard.appendChild(foodContent)
         container.appendChild(foodCard)
     }
 

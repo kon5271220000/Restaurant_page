@@ -24,7 +24,8 @@ nav {
 button {
     font-size: 32px;
     font-weight: bold;
-    background-color: lightcoral;
+    background-color: red;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     width: 128px;
     height: 48px;
@@ -43,7 +44,49 @@ button {
     align-items: center;
 }
 
+.home_page > h1 {
+    font-size: 64px;
+}
+
+.home_page > p {
+    font-size: 16px;
+}
+
+.menu_page {
+    margin: 100px;
+    margin-bottom: 80px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu_page > div {
+    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 150px 450px;
+    
+}
+
+.menu_page > div > img {
+    width: 150px;
+    height: 150px;
+}
+
+.menu_page > div > div {
+    padding-left: 10px;
+}
+
 footer {
     text-align: center;
     color: white;
 }
+
+.info_page {
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 300px;
+}
+
