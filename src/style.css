@@ -1,10 +1,49 @@
-header{
-    position: absolute;
-    width: 100vh;
-    background-color: gray;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Pompiere&display=swap');
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Montserrat";
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+button {
+    font-size: 32px;
+    font-weight: bold;
+    background-color: lightcoral;
+    color: white;
+    width: 128px;
+    height: 48px;
+    border: 2px none;
+    border-radius: 2px;
+}
+
+#content {
+    color: white;
+}
+
+.home_page {
+    text-align: center;
+    margin: 200px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    color: white;
 }

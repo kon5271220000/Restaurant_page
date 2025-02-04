@@ -1,23 +1,22 @@
 
-import homeImg from "./img/home.jpg"
 export const loadHomePage = () => {
     const container = document.getElementById("content")
 
-    const backgroudnImage = document.createElement("img")
-    backgroudnImage.src = homeImg
-    backgroudnImage.alt = "background"
-    container.appendChild(backgroudnImage)
+    const homeContainer = document.createElement("div")
+    homeContainer.className = "home_page"
 
     const headText = document.createElement("h1")
     headText.textContent = "Wellcome to Xanh-Authetical Vietnamese Cuisine"
-    container.appendChild(headText)
+    homeContainer.appendChild(headText)
 
     const containerText = document.createElement("p")
     containerText.textContent = "Discover the vibrant flavors of Vietnam with our carefully crafted dishes, from warm bowls of Phở to fresh Gỏi Cuốn and flavorful Bánh Mì. At Xanh, we bring the heart of Vietnamese tradition to your table, offering a true taste of culture and connection."
-    container.appendChild(containerText)
+    homeContainer.appendChild(containerText)
 
     const footText = document.createElement("h3")
     footText.textContent = "Savor the essence of Vietnam, one bite at a time"
-    container.appendChild(footText)
+    homeContainer.appendChild(footText)
+
+    container.appendChild(homeContainer)
 }
 
